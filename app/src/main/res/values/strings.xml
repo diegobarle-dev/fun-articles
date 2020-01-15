@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Fun Articles</string>
+    <string name="title_activity_article_details">ArticleDetailsActivity</string>
+    <string name="loading_details_message">[Loading details]</string>
+    <string name="error_message">An error occurred</string>
+    <string name="reload">Reload</string>
+</resources>

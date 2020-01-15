@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/padding_medium"
+    android:paddingBottom="@dimen/padding_medium"
+    android:background="?android:attr/selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/ivPreview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/article_placeholder"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="Article 1"
+        android:layout_marginStart="@dimen/padding_medium"
+        android:gravity="start"
+        android:textSize="@dimen/text_large"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/ivPreview"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="Article 8 subtitle with placeholder text"
+        android:gravity="start"
+        android:textSize="@dimen/text_normal"
+        android:paddingTop="@dimen/padding_small"
+        android:paddingBottom="@dimen/padding_small"
+        app:layout_constraintStart_toStartOf="@id/tvTitle"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintEnd_toEndOf="@id/tvTitle"/>
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="18/04/2013 11:48"
+        android:gravity="start"
+        android:textSize="@dimen/text_small"
+        android:paddingStart="@dimen/padding_small"
+        android:paddingEnd="@dimen/padding_small"
+        app:layout_constraintTop_toBottomOf="@id/tvSubtitle"
+        app:layout_constraintEnd_toEndOf="@id/tvTitle"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
